@@ -5,12 +5,14 @@ import (
 	"strconv"
 )
 
+// элемент двусвязного списка
 type Elem struct {
 	Val  interface{}
 	next *Elem
 	prev *Elem
 }
 
+// двусвязный список
 type List struct {
 	head *Elem
 	tail *Elem
